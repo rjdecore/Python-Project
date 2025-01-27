@@ -1,0 +1,27 @@
+## Project Overview
+
+This project analyzes Diwali sales data to identify customer purchasing patterns and trends. 
+
+**Data Source:** Diwali Sales Data.csv
+
+**Project Steps:**
+
+1. **Data Loading and Cleaning:**
+   - Imports necessary libraries (pandas, matplotlib, seaborn).
+   - Loads the Diwali sales data from a CSV file.
+   - Cleans the data by handling missing values and converting data types.
+
+2. **Exploratory Data Analysis:**
+   - Performs exploratory data analysis (EDA) to gain insights into the data.
+   - Investigates customer demographics, including gender, age, state, marital status, and occupation.
+   - Analyzes sales by product category and individual product IDs.
+   - Uses visualizations (bar charts, count plots) to present findings.
+
+3. **Key Findings:**
+   - Identifies key customer segments and their purchasing behaviors.
+   - Highlights top-selling products and categories.
+   - Summarizes trends and patterns observed in the data.
+
+4. **Conclusion:**
+   - Presents a concise conclusion based on the analysis.
+   - Offers actionable insights for businesses to target specific customer groups and optimize sales strategies.
