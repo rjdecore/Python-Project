@@ -1,0 +1,65 @@
+# Amazon Sales Report Analysis
+
+## Overview
+
+This project analyzes an Amazon Sales Report to gain insights into sales trends, customer behavior, and product performance. 
+
+## Data Source
+
+The data used for this analysis is from an Amazon Sales Report CSV file (`Amazon Sale Report.csv`). The file contains information about orders, including order date, product details, customer information, and shipping details.
+
+
+## Data Cleaning and Preprocessing
+
+The following steps were taken to clean and preprocess the data:
+
+1. **Handling Missing Values:** Null values were removed to ensure data quality.
+2. **Data Type Conversion:** Columns with incorrect data types were converted to their appropriate types (e.g., `ship-postal-code` to integer).
+3. **Column Renaming:** Columns were renamed for better readability and consistency (e.g., 'Qty' to 'Quantity').
+4. **Dropping Irrelevant Columns:** Unrelated or blank columns were dropped (e.g., 'New', 'PendingS').
+
+## Exploratory Data Analysis
+
+The analysis involved the following explorations:
+
+1. **Size Analysis:** Analyzed the distribution of sizes purchased by customers, revealing M-Size as the most popular.
+2. **Courier Status:** Examined the courier status of orders and their relationship to order status, showing a majority of orders shipped.
+3. **Category Analysis:** Explored the distribution of product categories, highlighting T-shirts as the most purchased category.
+4. **B2B Analysis:** Determined the proportion of B2B buyers (0.7%) compared to retailers (99.3%).
+5. **Fulfillment Analysis:** Investigated the fulfillment channels used, indicating Amazon as the primary method.
+6. **State-wise Distribution:** Analyzed the distribution of orders across different states, with Maharashtra leading the sales.
+
+
+## Visualization
+
+Various visualizations were used to present the findings:
+
+- **Countplots:** Used to visualize the distribution of sizes, courier status, and categories.
+- **Barplots:** Utilized to compare the quantity of products purchased by size.
+- **Pie Charts:** Employed to show the proportions of B2B buyers and fulfillment channels.
+- **Histograms:** Used to illustrate the distribution of product categories and state-wise sales.
+- **Scatter Plots:** Utilized to show relationship between category and size.
+
+## Conclusion
+
+The data analysis reveals key insights:
+- **Most Customers are from Maharashtra state.**
+- **The Business Primarily Serves Retailers.**
+- **Orders are Fulfilled Mainly Through Amazon.**
+- **T-shirts are the Most Popular Product Category.**
+- **M-Size is the Preferred Choice Among Buyers.**
+
+## Tools and Libraries Used
+
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Seaborn**
+- **Jupyter Notebook/Google Colab**
+
+
+## How to Run the Analysis
+
+1. Open the Jupyter Notebook/Google Colab file.
+2. Install the necessary libraries:
