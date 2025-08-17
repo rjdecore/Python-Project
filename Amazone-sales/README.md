@@ -54,16 +54,16 @@ The goal of this project is to **clean, analyze, and visualize Amazon sales data
 ![Size Distribution](Size.png)
 
 ### 2️⃣ Product Category
-![Category Distribution](images/category_distribution.png)
+![Category Distribution](Category.png)
 
 ### 3️⃣ Courier & Fulfillment
-![Courier Status](images/courier_status.png)
+![Courier Status](Ship_mode.png)
 
 ### 4️⃣ B2B vs Retail
-![B2B Pie](images/b2b_pie.png)
+![B2B Pie](A.png)
 
 ### 5️⃣ Geographic Distribution
-![Top States](images/top_states.png)
+![Top States](State.png)
 
 ---
 
