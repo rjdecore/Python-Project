@@ -82,8 +82,7 @@ This analysis aims to understand **pricing, ratings, and customer preferences** 
 ---
 
 ### 6️⃣ Most vs Least Expensive iPhones  
-![Price Comparison-Most](mostexp.png) 
-![Price Comparison-least](leastt.png)
+![Price Comparison-Most](mostexp.png,(leastt.png)
 
 - 💸 **Least Expensive:** iPhone SE (White, 64 GB) – ₹29,999  
 - 💎 **Most Expensive:** iPhone 12 Pro (Silver, 512 GB) – ₹1,40,900  
