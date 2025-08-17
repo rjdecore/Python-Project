@@ -35,7 +35,7 @@ This analysis aims to understand **pricing, ratings, and customer preferences** 
 ## 📊 Analysis & Findings  
 
 ### 1️⃣ Top 10 Highest-Rated iPhones  
-![Top Rated iPhones](images/top_rated.png)  
+![Top Rated iPhones](Top_10.png)  
 
 **Findings:**  
 - iPhone 11 Pro / Pro Max dominate ⭐ 4.7 ratings  
@@ -64,7 +64,7 @@ This analysis aims to understand **pricing, ratings, and customer preferences** 
 ---
 
 ### 4️⃣ Price vs Ratings  
-![Price vs Ratings](images/price_vs_ratings.png)  
+![Price vs Ratings](sale_vs_rating.png)  
 
 **Findings:**  
 - Negative trend → **lower-priced iPhones attract more ratings**  
@@ -73,7 +73,7 @@ This analysis aims to understand **pricing, ratings, and customer preferences** 
 ---
 
 ### 5️⃣ Discount vs Ratings  
-![Discount vs Ratings](images/discount_vs_ratings.png)  
+![Discount vs Ratings](sale_vs_.png)  
 
 **Findings:**  
 - High discounts don’t always lead to higher ratings  
@@ -82,7 +82,7 @@ This analysis aims to understand **pricing, ratings, and customer preferences** 
 ---
 
 ### 6️⃣ Most vs Least Expensive iPhones  
-![Price Comparison](images/price_comparison.png)  
+![Price Comparison](mostexp.png) (leastt.png)  
 
 - 💸 **Least Expensive:** iPhone SE (White, 64 GB) – ₹29,999  
 - 💎 **Most Expensive:** iPhone 12 Pro (Silver, 512 GB) – ₹1,40,900  
