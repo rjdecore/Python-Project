@@ -1,36 +1,118 @@
-# Apple Products Analysis
+# 📱 Flipkart iPhone Sales Analysis  
 
-This project analyzes a dataset of Apple products, specifically iPhones, available on Flipkart in India. It aims to uncover insights into pricing, ratings, reviews, and customer preferences.
+## 📝 Problem Statement  
+Apple iPhones are among the most popular smartphones in India, available across multiple models, storage sizes, and price ranges.  
+This analysis aims to understand **pricing, ratings, and customer preferences** to uncover trends such as:  
+- Which iPhones are **highest rated** on Flipkart?  
+- How do **price and ratings** correlate?  
+- What role do **discounts** play in influencing customer decisions?  
+- Which models are **most and least expensive**?  
 
-## Dataset
+---
 
-The dataset used in this analysis is named `apple_products.csv` and contains information about various iPhone models sold on Flipkart. It includes details such as product name, original price, sale price, discount percentage, star rating, number of ratings, and number of reviews.
+## 📂 Dataset Overview  
+- **Source:** Flipkart product listings  
+- **Shape:** 62 rows × 11 columns  
+- **Key Columns:**  
+  - Product Name  
+  - Brand  
+  - Sale Price & MRP  
+  - Discount %  
+  - Star Rating  
+  - Number of Ratings & Reviews  
+  - RAM  
 
-## Analysis
+---
 
-The analysis covers the following aspects:
+## 🧹 Data Cleaning  
+- Verified no missing/null values  
+- Removed duplicates  
+- Converted `Sale Price`, `MRP`, and `Discount %` into numeric formats  
+- Ensured proper datatypes for statistical analysis  
 
-1. **Top-rated iPhones:** Identifying the top 10 highest-rated iPhones on Flipkart based on their star ratings.
-2. **Ratings and reviews:** Exploring the distribution of ratings and reviews for the highest-rated iPhones.
-3. **Price analysis:** Investigating the relationship between sales price and the number of ratings, as well as the relationship between discount percentage and ratings.
-4. **Expensive vs. affordable:** Identifying the least and most expensive iPhones and comparing their specifications.
+---
 
-## Insights
+## 📊 Analysis & Findings  
 
-The analysis reveals several interesting insights:
+### 1️⃣ Top 10 Highest-Rated iPhones  
+![Top Rated iPhones](images/top_rated.png)  
 
-- iPhones with lower sales prices tend to have more ratings, suggesting affordability influences purchase decisions.
-- iPhones with higher discount percentages have fewer ratings, indicating potential customer concerns about quality or authenticity.
-- The most expensive iPhone often receives higher ratings and reviews, indicating a possible link between price and perceived quality.
+**Findings:**  
+- iPhone 11 Pro / Pro Max dominate ⭐ 4.7 ratings  
+- iPhone 8 Plus (Gold, 64 GB) has the **highest engagement** (95k+ ratings, 8k+ reviews)  
+- All top iPhones rated **above 4.5** → strong brand trust  
 
-## Visualization
+---
 
-The analysis utilizes visualizations, including bar charts and scatter plots, to present the findings effectively. These visualizations help in understanding the relationships and patterns within the data.
+### 2️⃣ Ratings Count Distribution  
+![Ratings Count](images/ratings_count.png)  
 
-## Conclusion
+**Findings:**  
+- iPhone 8 Plus far ahead in ratings volume  
+- iPhone 12 and 11 Pro Max get moderate attention  
+- Customers continue buying older iPhones in bulk  
 
-This project provides valuable insights into the dynamics of Apple product sales and customer preferences on Flipkart. The findings can be used by businesses to make informed decisions regarding pricing, marketing, and product development.
+---
 
-## Code
+### 3️⃣ Reviews Distribution  
+![Reviews Count](images/reviews_count.png)  
 
-The analysis is performed using Python and popular libraries such as Pandas, Plotly Express, and Plotly Graph Objects. The code is available in the accompanying Jupyter Notebook.
+**Findings:**  
+- Reviews follow the same trend as ratings  
+- Majority of reviews concentrated on budget-friendly/older iPhones  
+
+---
+
+### 4️⃣ Price vs Ratings  
+![Price vs Ratings](images/price_vs_ratings.png)  
+
+**Findings:**  
+- Negative trend → **lower-priced iPhones attract more ratings**  
+- Affordability is a key driver in Indian market  
+
+---
+
+### 5️⃣ Discount vs Ratings  
+![Discount vs Ratings](images/discount_vs_ratings.png)  
+
+**Findings:**  
+- High discounts don’t always lead to higher ratings  
+- Suggests customers trust **consistent pricing** over “flashy offers”  
+
+---
+
+### 6️⃣ Most vs Least Expensive iPhones  
+![Price Comparison](images/price_comparison.png)  
+
+- 💸 **Least Expensive:** iPhone SE (White, 64 GB) – ₹29,999  
+- 💎 **Most Expensive:** iPhone 12 Pro (Silver, 512 GB) – ₹1,40,900  
+
+**Findings:**  
+- iPhone SE → **best value-for-money**, gets max ratings  
+- iPhone 12 Pro → premium niche, few buyers  
+
+---
+
+## 📈 Key Insights  
+- 📌 Customers trust and rate **older iPhones** just as high as newer ones  
+- 📌 **Price sensitivity** plays a major role in ratings volume  
+- 📌 Discounts do not strongly influence customer satisfaction  
+- 📌 **Budget models (SE, 8 Plus)** dominate in popularity compared to premium ones  
+
+---
+
+## 📊 Metrics (for self-project)  
+Since this is an independent data analysis, we can define success metrics as:  
+- ✅ Number of models analyzed → **62**  
+- ✅ Rating distribution range → **4.3 to 4.7 stars**  
+- ✅ Price range analyzed → **₹29,999 – ₹1,40,900**  
+- ✅ Engagement analyzed → **95k+ ratings, 8k+ reviews**  
+
+---
+
+## 🚀 Tools Used  
+- **Python**: Pandas, Plotly  
+- **IDE**: Jupyter Notebook  
+- **Version Control**: Git & GitHub  
+
+---
