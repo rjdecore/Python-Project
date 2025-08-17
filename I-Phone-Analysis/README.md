@@ -45,7 +45,7 @@ This analysis aims to understand **pricing, ratings, and customer preferences** 
 ---
 
 ### 2️⃣ Ratings Count Distribution  
-![Ratings Count](images/ratings_count.png)  
+![Ratings Count](num_rating.png)  
 
 **Findings:**  
 - iPhone 8 Plus far ahead in ratings volume  
@@ -55,7 +55,7 @@ This analysis aims to understand **pricing, ratings, and customer preferences** 
 ---
 
 ### 3️⃣ Reviews Distribution  
-![Reviews Count](images/reviews_count.png)  
+![Reviews Count](num_Review.png)  
 
 **Findings:**  
 - Reviews follow the same trend as ratings  
@@ -82,7 +82,8 @@ This analysis aims to understand **pricing, ratings, and customer preferences** 
 ---
 
 ### 6️⃣ Most vs Least Expensive iPhones  
-![Price Comparison](mostexp.png) (leastt.png)  
+![Price Comparison-Most](mostexp.png) 
+![Price Comparison-least](leastt.png)
 
 - 💸 **Least Expensive:** iPhone SE (White, 64 GB) – ₹29,999  
 - 💎 **Most Expensive:** iPhone 12 Pro (Silver, 512 GB) – ₹1,40,900  
