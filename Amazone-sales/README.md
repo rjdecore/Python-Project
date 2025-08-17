@@ -51,7 +51,7 @@ The goal of this project is to **clean, analyze, and visualize Amazon sales data
 ## 📊 Visual Insights
 
 ### 1️⃣ Product Size Preference
-![Size Distribution](images/size_distribution.png)
+![Size Distribution](Amazone-sales/Screenshot 2025-08-17 155251.png)
 
 ### 2️⃣ Product Category
 ![Category Distribution](images/category_distribution.png)
