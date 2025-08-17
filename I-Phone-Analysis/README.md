@@ -82,11 +82,10 @@ This analysis aims to understand **pricing, ratings, and customer preferences** 
 ---
 
 ### 6️⃣ Most vs Least Expensive iPhones  
-![Price Comparison-Most](mostexp.png
-<p align="center">
-  <img src="images/most_rated.png" alt="Most Rated iPhone" width="45%"/>
-  <img src="images/least_rated.png" alt="Least Rated iPhone" width="45%"/>
-</p>
+![Price Comparison-Most](mostexp.png)
+                        
+
+
 
 
 - 💸 **Least Expensive:** iPhone SE (White, 64 GB) – ₹29,999  
