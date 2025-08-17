@@ -1,40 +1,76 @@
-# Netflix Data Analysis
+📊 Netflix Data Analysis
+📝 Problem Statement
 
-This Google Colab notebook performs an exploratory data analysis (EDA) on a Netflix dataset. It provides insights into various aspects of Netflix content, including:
+Netflix has become one of the biggest OTT platforms globally, with a vast collection of movies and TV shows.
+The goal of this project is to analyze the Netflix titles dataset to gain insights into:
 
-- **Content Ratings Distribution:** Analyzes the distribution of content ratings on Netflix (e.g., TV-MA, PG-13, etc.) using a pie chart.
-- **Top Directors and Actors:** Identifies and visualizes the top 5 directors and actors on Netflix based on the number of titles they have worked on.
-- **Content Production Trend:** Examines the trend of content produced on Netflix over the years, differentiating between movie and TV show releases using a line chart.
-- **Sentiment Analysis:** Performs sentiment analysis on Netflix content descriptions to understand the overall sentiment (positive, negative, or neutral) expressed and visualizes the sentiment trend using a bar chart.
+Content ratings and their distribution
+
+Top contributing directors and actors
+
+Trends in content production over time
+
+Sentiment of content descriptions
+
+📂 Dataset
+
+Source: netflix_titles.csv
+
+Rows & Columns: 8,807 rows × 12 columns
+
+Key Columns: title, type, director, cast, country, release_year, rating, duration, listed_in, description
+
+🔍 Exploratory Data Analysis (EDA)
+1️⃣ Distribution of Content Ratings
+
+A pie chart showing how content is rated on Netflix.
 
 
-## Requirements
+2️⃣ Top 5 Directors
 
-- **Google Colab:** This notebook is designed to run in Google Colab.
-- **Libraries:** The following libraries are used in the notebook:
-    - `numpy`
-    - `pandas`
-    - `plotly.express`
-    - `textblob`
-- **Data:** The notebook requires a CSV file named `netflix_titles.csv` containing Netflix content data. Make sure to upload this file to your Colab environment.
+Identifying directors with the most content available on Netflix.
 
-## Usage
 
-1. Open the notebook in Google Colab.
-2. Upload the `netflix_titles.csv` file to your Colab environment.
-3. Run all the cells in the notebook sequentially.
-4. Observe the generated visualizations and insights.
+3️⃣ Top 5 Actors
 
-## Insights
+Finding the most frequent actors appearing on Netflix shows and movies.
 
-- The notebook provides visualizations that help understand the distribution of content ratings, top directors and actors, content production trends, and overall sentiment of Netflix content.
-- Users can gain insights into popular content categories, key contributors to Netflix content, and trends in content production over time.
 
-## Disclaimer
+4️⃣ Content Production Trend (2000–2021)
 
-- The analysis is based on the provided dataset and may not reflect the complete picture of Netflix content.
-- The sentiment analysis is based on the TextBlob library and may have limitations in accurately capturing nuanced sentiment.
+Analyzing how Netflix has expanded its library over the years.
 
-## Contributing
 
-Feel free to contribute to this notebook by adding new analyses, improving visualizations, or providing feedback.
+5️⃣ Sentiment Analysis of Content Descriptions
+
+Using TextBlob, we categorized content descriptions into:
+
+✅ Positive
+
+❌ Negative
+
+⚪ Neutral
+
+📌 Findings
+
+Most Netflix content is rated TV-MA (Mature Audiences).
+
+Rajiv Chilaka is the top director with the highest number of shows/movies.
+
+Anupam Kher and other popular actors frequently appear in Netflix content.
+
+Netflix production significantly increased after 2015, with movies dominating until TV shows caught up.
+
+Sentiment analysis shows that positive sentiment dominates, but there’s also a large share of neutral content.
+
+📊 Metrics / Takeaways
+
+📈 Dataset Size: 8,807 entries
+
+🎬 Content Types: Movies & TV Shows
+
+⭐ Most Common Rating: TV-MA
+
+⏳ Trend: Rapid growth post-2015
+
+😊 Sentiment: Mostly Positive
