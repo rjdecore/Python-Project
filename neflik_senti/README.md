@@ -85,4 +85,4 @@ Visualizations are built using **Plotly Express** for interactive insights.
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/netflix-analysis.git
+   [git clone https://github.com/your-username/netflix-analysis](https://github.com/rjdecore/Python-Project/tree/main/neflik_senti).git
