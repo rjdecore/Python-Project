@@ -42,42 +42,42 @@ The goal is to find **patterns and insights** that could be useful for decision-
 ### 1️⃣ Which ride **category** is most booked?  
 📌 Observation: **Business** category dominates.  
 
-![Category Distribution](images/category.png)  
+![Category Distribution](category.png)  
 
 ---
 
 ### 2️⃣ What is the most common **purpose** of rides?  
 📌 Observation: **Meetings** are the top purpose.  
 
-![Purpose Distribution](images/purpose.png)  
+![Purpose Distribution](purpose.png)  
 
 ---
 
 ### 3️⃣ At what **time of day** are most rides booked?  
 📌 Observation: Afternoon & Evening show peak rides.  
 
-![Day vs Rides](images/daytime.png)  
+![Day vs Rides](day_night.png)  
 
 ---
 
 ### 4️⃣ Which **months** have fewer bookings?  
 📌 Observation: Winter months (Jan, Feb, Nov, Dec) show lower demand.  
 
-![Monthly Trend](images/monthly.png)  
+![Monthly Trend](month.png)  
 
 ---
 
 ### 5️⃣ On which **day of the week** are most rides booked?  
 📌 Observation: **Friday** has the highest bookings.  
 
-![Weekday Trend](images/weekday.png)  
+![Weekday Trend](day.png)  
 
 ---
 
 ### 6️⃣ What is the **typical ride distance**?  
 📌 Observation: Most rides are within **0–20 miles**.  
 
-![Distance Distribution](images/distance.png)  
+![Distance Distribution](distance.png)  
 
 ---
 
