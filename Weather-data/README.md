@@ -78,4 +78,4 @@ Some plots used in this project:
 ## 🚀 How to Run
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/weather-data-analysis.git
+   git clone [https://github.com/rjdecore/weather-data-analysis](https://github.com/rjdecore/Python-Project/edit/main/Weather-data).git
