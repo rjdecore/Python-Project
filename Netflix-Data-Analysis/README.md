@@ -25,25 +25,25 @@ Key Columns: title, type, director, cast, country, release_year, rating, duratio
 **1️⃣ Distribution of Content Ratings**
 
 A pie chart showing how content is rated on Netflix.
-
+![Content_Rating](Content_Distribution.png)
 
 # 2️⃣ Top 5 Directors
-
+![Director](Top_Director.png)
 Identifying directors with the most content available on Netflix.
 
 
 # 3️⃣ Top 5 Actors
-
+![Actor](Top_Actorr.png)
 Finding the most frequent actors appearing on Netflix shows and movies.
 
 
 # 4️⃣ Content Production Trend (2000–2021)
-
+![Trend](Content_Distribution.png)
 Analyzing how Netflix has expanded its library over the years.
 
 
 # 5️⃣ Sentiment Analysis of Content Descriptions
-
+![Sentiment](SSentiment.png)
 **Using TextBlob, we categorized content descriptions into:**
 
 - ✅ Positive
