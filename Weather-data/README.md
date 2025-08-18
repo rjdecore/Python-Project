@@ -1,46 +1,81 @@
-# Weather Data Analysis
+# 🌤️ Weather Data Analysis (2012 Dataset)
 
-This Google Colab notebook analyzes a weather dataset to answer various questions about weather patterns, including wind speed, visibility, and temperature.
+## 📌 Project Overview
+This project is a comprehensive **Exploratory Data Analysis (EDA)** on a weather dataset from 2012.  
+Using **Python, Pandas, NumPy, Matplotlib, and Seaborn**, we analyze various aspects of the weather such as **temperature, humidity, visibility, wind speed, and weather conditions**.  
 
-## Dataset
+The goal is to clean, process, and analyze the dataset while answering a set of predefined analytical questions with both tabular and visual outputs.
 
-The dataset used in this analysis is named `file.csv` and is assumed to be located in the `/content/` directory within the Colab environment. It contains information about weather conditions over a period of time, including columns such as 'Date/Time', 'Temp_C', 'Dew Point Temp_C', 'Rel Hum_%', 'Wind Speed_km/h', 'Visibility_km', 'Press_kPa', and 'Weather'.
+---
 
-## Analysis
+## 📂 Dataset Information
+- **Source:** CSV file containing hourly weather records of 2012  
+- **Total Records:** 8784 rows  
+- **Columns:**  
 
-The notebook performs the following analysis steps:
+| Column             | Description |
+|--------------------|-------------|
+| Date/Time          | Timestamp of observation |
+| Temp_C             | Temperature in Celsius |
+| Dew Point Temp_C   | Dew Point Temperature in Celsius |
+| Rel Hum_%          | Relative Humidity (%) |
+| Wind Speed_km/h    | Wind Speed in km/h |
+| Visibility_km      | Visibility in km |
+| Press_kPa          | Atmospheric Pressure in kPa |
+| Weather Condition  | Weather condition description |
 
-1. **Data Loading and Exploration:** Loads the dataset into a Pandas DataFrame and displays basic information about its structure and descriptive statistics.
-2. **Unique Wind Speeds:** Identifies and visualizes the unique wind speed values present in the dataset.
-3. **Clear Weather Occurrences:** Calculates and visualizes the number of times the weather was recorded as 'Clear'.
-4. **Wind Speed Frequency:** Determines and visualizes the frequency of wind speed being exactly 4 km/h.
-5. **Null Value Detection:** Identifies and visualizes any missing values within the dataset.
-6. **Column Renaming:** Renames the 'Weather' column to 'Weather Condition' for better clarity.
-7. **Mean Visibility:** Calculates and visualizes the average visibility.
-8. **Pressure Standard Deviation:** Calculates and visualizes the standard deviation of pressure.
-9. **Relative Humidity Variance:** Calculates and visualizes the variance of relative humidity.
-10. **Snow Occurrences:** Extracts and displays all instances where snow was recorded.
-11. **Wind Speed and Visibility:** Identifies and displays instances where wind speed exceeded 24 km/h and visibility was 25 km.
-12. **Mean Values by Weather Condition:** Calculates and displays the mean value of each column for each weather condition.
-13. **Minimum and Maximum Values by Weather Condition:** Determines and displays the minimum and maximum values of each column for each weather condition.
-14. **Foggy Weather Records:** Extracts and displays all records where the weather condition was 'Fog'.
-15. **Combined Weather Conditions:** Extracts and displays instances where the weather was 'Clear' or visibility exceeded 40 km.
-16. **Specific Weather Conditions:** Extracts and displays instances where specific weather conditions were met, such as 'Clear' weather with relative humidity greater than 50% or visibility exceeding 40 km.
+---
 
+## 🧹 Data Cleaning Steps
+- ✅ Converted **`Date/Time`** column to proper datetime format  
+- ✅ Checked for **missing values** (none found)  
+- ✅ Renamed column **`Weather` → `Weather Condition`** for clarity  
+- ✅ Converted data types for consistency  
 
-## Libraries Used
+---
 
-The analysis utilizes the following Python libraries:
+## 🔎 Exploratory Analysis & Questions Answered
 
-- Pandas: For data manipulation and analysis.
-- NumPy: For numerical computations.
-- Matplotlib: For creating visualizations.
-- Seaborn: For enhancing visualizations.
+We answered **15 key questions** about the dataset:
 
-## Usage
+1. **Unique Wind Speeds** → Listed all unique values, plotted bar chart  
+2. **Weather Exactly Clear** → Found **1326 instances**  
+3. **Wind Speed Exactly 4 km/h** → Found **474 instances**  
+4. **Null Values** → None found (validated with heatmap)  
+5. **Renamed Column** → `Weather` → `Weather Condition`  
+6. **Mean Visibility** → **27.66 km**  
+7. **Standard Deviation of Pressure** → **0.844 kPa**  
+8. **Variance of Relative Humidity** → **286.25**  
+9. **Snow Records** → **390 instances**  
+10. **Wind Speed > 24 & Visibility = 25** → **308 records**  
+11. **Mean Values by Weather Condition** → Grouped stats calculated  
+12. **Min & Max Values by Weather Condition** → Tabulated  
+13. **Records with Fog** → **150 rows**  
+14. **Weather Clear or Visibility > 40** → **313 rows**  
+15. **Complex Condition** → Extracted rows where:  
+   - (A) Weather = Clear & Humidity > 50  
+   - (B) Visibility > 40  
 
-To run this notebook:
+---
 
-1. Upload the `file.csv` dataset to the `/content/` directory in your Colab environment.
-2. Execute each code cell in the notebook sequentially.
-3. Observe the outputs and visualizations generated for each analysis step.
+## 📊 Visualizations
+Some plots used in this project:
+- 📌 Distribution of **wind speeds**  
+- 📌 Bar charts for **Clear, Snow, Fog conditions**  
+- 📌 Heatmap of **missing values**  
+- 📌 Aggregated **mean/variance plots**  
+
+---
+
+## 🛠️ Tools & Libraries Used
+- 🐍 **Python 3**  
+- 🐼 **Pandas** → Data manipulation & cleaning  
+- 🔢 **NumPy** → Numerical analysis  
+- 📈 **Matplotlib / Seaborn** → Visualizations  
+
+---
+
+## 🚀 How to Run
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/weather-data-analysis.git
