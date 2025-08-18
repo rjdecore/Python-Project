@@ -1,18 +1,19 @@
-📊 Netflix Data Analysis
-📝 Problem Statement
+# 📊 Netflix Data Analysis
 
-Netflix has become one of the biggest OTT platforms globally, with a vast collection of movies and TV shows.
-The goal of this project is to analyze the Netflix titles dataset to gain insights into:
+**📝 Problem Statement**
 
-Content ratings and their distribution
+**Netflix has become one of the biggest OTT platforms globally, with a vast collection of movies and TV shows.
+The goal of this project is to analyze the Netflix titles dataset to gain insights into:**
 
-Top contributing directors and actors
+- Content ratings and their distribution
 
-Trends in content production over time
+- Top contributing directors and actors
 
-Sentiment of content descriptions
+- Trends in content production over time
 
-📂 Dataset
+- Sentiment of content descriptions
+
+**📂 Dataset**
 
 Source: netflix_titles.csv
 
@@ -20,38 +21,38 @@ Rows & Columns: 8,807 rows × 12 columns
 
 Key Columns: title, type, director, cast, country, release_year, rating, duration, listed_in, description
 
-🔍 Exploratory Data Analysis (EDA)
-1️⃣ Distribution of Content Ratings
+**🔍 Exploratory Data Analysis (EDA)**
+**1️⃣ Distribution of Content Ratings**
 
 A pie chart showing how content is rated on Netflix.
 
 
-2️⃣ Top 5 Directors
+# 2️⃣ Top 5 Directors
 
 Identifying directors with the most content available on Netflix.
 
 
-3️⃣ Top 5 Actors
+# 3️⃣ Top 5 Actors
 
 Finding the most frequent actors appearing on Netflix shows and movies.
 
 
-4️⃣ Content Production Trend (2000–2021)
+# 4️⃣ Content Production Trend (2000–2021)
 
 Analyzing how Netflix has expanded its library over the years.
 
 
-5️⃣ Sentiment Analysis of Content Descriptions
+# 5️⃣ Sentiment Analysis of Content Descriptions
 
-Using TextBlob, we categorized content descriptions into:
+**Using TextBlob, we categorized content descriptions into:**
 
-✅ Positive
+- ✅ Positive
 
-❌ Negative
+- ❌ Negative
 
-⚪ Neutral
+- ⚪ Neutral
 
-📌 Findings
+**📌 Findings**
 
 Most Netflix content is rated TV-MA (Mature Audiences).
 
@@ -63,7 +64,7 @@ Netflix production significantly increased after 2015, with movies dominating un
 
 Sentiment analysis shows that positive sentiment dominates, but there’s also a large share of neutral content.
 
-📊 Metrics / Takeaways
+**📊 Metrics / Takeaways**
 
 📈 Dataset Size: 8,807 entries
 
