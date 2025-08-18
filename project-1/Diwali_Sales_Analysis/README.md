@@ -73,5 +73,5 @@ The analysis was performed using **Python (Pandas, Matplotlib, Seaborn)**.
 
 ---
 
-## 📁 Project Structure  
+
 
