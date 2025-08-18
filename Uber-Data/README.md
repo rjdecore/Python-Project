@@ -1,53 +1,106 @@
-# Uber Data Analysis
+# 🚖 Uber Data Analysis  
 
-This project analyzes a dataset of Uber rides to gain insights into user behavior and patterns.
+## 📌 Problem Statement  
+Understanding ride patterns is important for both Uber and users.  
+This project analyzes an **Uber ride dataset** to answer:  
+- What type of rides do people book most often?  
+- What are the common purposes of booking?  
+- When (time of day, month, weekday) do people prefer booking rides?  
+- What distances do people typically travel?  
 
-## About the Dataset
+The goal is to find **patterns and insights** that could be useful for decision-making and future predictions.  
 
-The dataset used in this analysis contains information about Uber rides, including:
+---
 
-- Start and end dates and times
-- Pickup and dropoff locations
-- Trip distances (miles)
-- Ride purposes (business, personal, etc.)
-- Ride categories (business, personal, etc.)
+## 📂 Dataset  
+- **File**: `UberDataset.csv`  
+- **Rows**: 1156  
+- **Columns**:  
+  - `START_DATE` → Ride start date & time  
+  - `END_DATE` → Ride end date & time  
+  - `CATEGORY` → Ride type (Business/Personal)  
+  - `START` → Start location  
+  - `STOP` → Stop location  
+  - `MILES` → Distance traveled  
+  - `PURPOSE` → Purpose of ride  
 
+---
 
-## Project Goals
+## ⚙️ Data Preprocessing  
+✔️ Missing values in **PURPOSE** filled with `"not"`  
+✔️ Converted `START_DATE` & `END_DATE` to datetime format  
+✔️ Extracted new features:  
+- `DATE`, `TIME`  
+- `Day_Night` (Morning, Afternoon, Evening, Night)  
+- `Month`, `DAY`, `DAY_Name`  
+✔️ Removed null values after transformations  
 
-The main goals of this project are to:
+---
 
-- Explore the dataset and identify key variables.
-- Clean and preprocess the data to prepare it for analysis.
-- Visualize the data to uncover patterns and trends.
-- Answer specific questions about Uber ride patterns.
+## 📊 Exploratory Data Analysis  
 
-## Analysis Steps
+### 1️⃣ Which ride **category** is most booked?  
+📌 Observation: **Business** category dominates.  
 
-1. **Data Loading and Preprocessing:**
-   - Import necessary libraries (pandas, matplotlib, seaborn).
-   - Load the Uber dataset into a pandas DataFrame.
-   - Handle missing values and convert data types as needed.
-   - Create new columns for date, time, and day/night categories.
+![Category Distribution](images/category.png)  
 
-2. **Data Visualization and Exploration:**
-   - Create visualizations to answer specific questions, such as:
-      - Which category of users book the most rides?
-      - What are the most common ride purposes?
-      - When are Uber rides booked most frequently (time of day)?
-      - In which month are Uber rides booked less frequently?
-      - On which day of the week are Uber rides booked the most?
-      - What is the typical distance of an Uber ride?
+---
 
-3. **Insights and Observations:**
-   - Summarize the key findings from the data analysis.
-   - Provide insights into Uber user behavior and ride patterns.
-   - Draw conclusions based on the observed trends.
+### 2️⃣ What is the most common **purpose** of rides?  
+📌 Observation: **Meetings** are the top purpose.  
 
-## Dependencies
+![Purpose Distribution](images/purpose.png)  
 
-- pandas
-- matplotlib
-- seaborn
-- numpy
-- warnings
+---
+
+### 3️⃣ At what **time of day** are most rides booked?  
+📌 Observation: Afternoon & Evening show peak rides.  
+
+![Day vs Rides](images/daytime.png)  
+
+---
+
+### 4️⃣ Which **months** have fewer bookings?  
+📌 Observation: Winter months (Jan, Feb, Nov, Dec) show lower demand.  
+
+![Monthly Trend](images/monthly.png)  
+
+---
+
+### 5️⃣ On which **day of the week** are most rides booked?  
+📌 Observation: **Friday** has the highest bookings.  
+
+![Weekday Trend](images/weekday.png)  
+
+---
+
+### 6️⃣ What is the **typical ride distance**?  
+📌 Observation: Most rides are within **0–20 miles**.  
+
+![Distance Distribution](images/distance.png)  
+
+---
+
+## 📈 Key Insights / Metrics  
+- 📍 **Business trips** account for most rides  
+- 📍 **Meetings** dominate ride purposes  
+- 📍 **Afternoon & Evening** = peak ride times  
+- 📍 **Short rides (<20 miles)** are most common  
+
+---
+
+## 🛠️ Tech Stack  
+- Python 🐍  
+- pandas | numpy | matplotlib | seaborn  
+
+---
+
+## 🏁 Conclusion  
+This project highlights how Uber rides are primarily for **business and meetings**, with peak demand in the **afternoons/evenings** and **short-distance trips** being most common.  
+
+📌 Future Work:  
+- Perform **geospatial analysis** on start/stop locations  
+- Build a **demand prediction model**  
+- Deploy an interactive dashboard with **Streamlit / Plotly**  
+
+---
