@@ -33,12 +33,12 @@ Identifying directors with the most content available on Netflix.
 
 
 # 3️⃣ Top 5 Actors
-![Actor](Top_Actorr.png)
+![Actor](Top_Actor.png)
 Finding the most frequent actors appearing on Netflix shows and movies.
 
 
 # 4️⃣ Content Production Trend (2000–2021)
-![Trend](Content_Distribution.png)
+![Trend](Content_over.png)
 Analyzing how Netflix has expanded its library over the years.
 
 
