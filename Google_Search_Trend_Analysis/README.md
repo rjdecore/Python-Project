@@ -2,7 +2,8 @@
 
 ## 📌 Problem Statement  
 Understanding **search trends** can provide valuable insights into user interests, seasonal patterns, and market behavior.  
-The goal of this project is to analyze **Google search data** to identify patterns, correlations, and meaningful insights.  
+The goal of this project is to analyze **Google search data** to identify patterns, correlations, and meaningful insights
+we use python Library like Pytrend to achive the finding just by changing the keywords.  
 
 ---
 
