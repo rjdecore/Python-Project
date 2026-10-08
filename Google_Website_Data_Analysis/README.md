@@ -1,57 +1,20 @@
-# 🌐 Website Performance Analysis  
+# Website Performance Analysis — Python
 
-## 📌 Problem Statement  
-Monitoring **website performance metrics** is essential for understanding user engagement, identifying bottlenecks, and optimizing site experience.  
-This project analyzes **website traffic & performance data** to uncover insights about:  
-- User activity trends  
-- Page performance  
-- Engagement metrics  
+## Business Objective
+Analyze website traffic and performance data to understand user activity, engagement, traffic peaks, and potential performance bottlenecks.
 
----
+## Analysis Areas
+- Traffic over time
+- Peak and off-peak activity
+- User engagement metrics
+- Page-performance trends
+- Error/performance patterns
 
-## 📂 Dataset  
-- Source: Website traffic/performance logs  
-- Features include: timestamps, user activity, traffic counts, performance measures  
+## Workflow
+**Timestamp preparation → cleaning → aggregation → trend analysis → visualization → recommendations**
 
----
+## Business Use
+The analysis can support capacity planning, website optimization, and identification of periods where user activity or performance requires attention.
 
-## 🔧 Data Cleaning & Preparation  
-- Parsed timestamp data  
-- Removed duplicates & irrelevant columns  
-- Aggregated data by date/time for trend analysis  
-- Converted numerical features into proper formats  
-
----
-
-## 📊 Exploratory Data Analysis (EDA)  
-1. **Traffic Over Time**  
-   - Line charts showing daily/weekly activity  
-   - Peak vs. off-peak periods  
-
-2. **User Engagement Metrics**  
-   - Bounce rate, session duration, returning visitors  
-
-3. **Performance Analysis**  
-   - Page load times  
-   - Error trends  
-
----
-
-## ✅ Conclusion  
-- Identified **peak activity hours/days**  
-- Highlighted performance bottlenecks in website activity  
-- Recommendations:  
-  - Optimize during peak load times  
-  - Improve page performance for better retention  
-
----
-
-## ⚙️ Tech Stack  
-- **Python** (Pandas, NumPy)  
-- **Visualization:** Matplotlib, Seaborn  
-- **Notebook:** Jupyter / Colab  
-
----
-
-  
-
+## Tech Stack
+**Python | Pandas | NumPy | Matplotlib | Seaborn | Web Analytics**
