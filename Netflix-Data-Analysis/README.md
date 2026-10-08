@@ -1,77 +1,83 @@
-# 📊 Netflix Data Analysis
+# Netflix Content & Sentiment Analysis — Python
 
-**📝 Problem Statement**
+## Business Objective
 
-**Netflix has become one of the biggest OTT platforms globally, with a vast collection of movies and TV shows.
-The goal of this project is to analyze the Netflix titles dataset to gain insights into:**
+This project explores Netflix's movie and TV-show catalog to understand content composition, contributor patterns, production trends, and the sentiment expressed in title descriptions.
 
-- Content ratings and their distribution
+The goal is to demonstrate how Python can be used to turn a media dataset into structured business-style insights.
 
-- Top contributing directors and actors
+## Dataset
 
-- Trends in content production over time
+- **File:** `netflix_titles.csv`
+- **Rows:** 8,807
+- **Columns:** 12
+- **Key fields:** title, type, director, cast, country, release_year, rating, duration, listed_in, description
 
-- Sentiment of content descriptions
+## Business Questions
 
-**📂 Dataset**
+- What content ratings are most common?
+- Which directors and actors appear most frequently?
+- How has content production changed over time?
+- What is the balance between movies and TV shows?
+- What sentiment is present in title descriptions?
 
-Source: netflix_titles.csv
+## Analysis Performed
 
-Rows & Columns: 8,807 rows × 12 columns
+### Content Distribution
 
-Key Columns: title, type, director, cast, country, release_year, rating, duration, listed_in, description
+The project examines the distribution of Netflix titles by content rating and type.
 
-**🔍 Exploratory Data Analysis (EDA)**
-**1️⃣ Distribution of Content Ratings**
+![Content Distribution](Content_Distribution.png)
 
-A pie chart showing how content is rated on Netflix.
-![Content_Rating](Content_Distribution.png)
+### Contributor Analysis
 
-# 2️⃣ Top 5 Directors
-![Director](Top_Director.png)
-Identifying directors with the most content available on Netflix.
+The analysis identifies the most frequent directors and actors in the dataset.
 
+![Top Directors](Top_Director.png)
 
-# 3️⃣ Top 5 Actors
-![Actor](Top_Actor.png)
-Finding the most frequent actors appearing on Netflix shows and movies.
+![Top Actors](Top_Actor.png)
 
+### Production Trend
 
-# 4️⃣ Content Production Trend (2000–2021)
-![Trend](Content_over.png)
-Analyzing how Netflix has expanded its library over the years.
+Content production is analyzed across release years to identify changes in catalog growth.
 
+![Production Trend](Content_over.png)
 
-# 5️⃣ Sentiment Analysis of Content Descriptions
-![Sentiment](SSentiment.png)
-**Using TextBlob, we categorized content descriptions into:**
+### Sentiment Analysis
 
-- ✅ Positive
+TextBlob is used to classify descriptions into:
 
-- ❌ Negative
+- Positive
+- Negative
+- Neutral
 
-- ⚪ Neutral
+![Sentiment Analysis](SSentiment.png)
 
-**📌 Findings**
+## Key Findings
 
-Most Netflix content is rated TV-MA (Mature Audiences).
+The existing analysis reports:
 
-Rajiv Chilaka is the top director with the highest number of shows/movies.
+- **TV-MA** as the most common rating.
+- **Rajiv Chilaka** as the most frequent director in the analyzed dataset.
+- **Anupam Kher** among the most frequent actors.
+- Strong catalog growth after 2015.
+- Positive sentiment as the largest sentiment category, with a substantial neutral share.
 
-Anupam Kher and other popular actors frequently appear in Netflix content.
+## Interview Talking Points
 
-Netflix production significantly increased after 2015, with movies dominating until TV shows caught up.
+The project demonstrates:
 
-Sentiment analysis shows that positive sentiment dominates, but there’s also a large share of neutral content.
+**Data exploration → categorical analysis → trend analysis → text preprocessing/analysis → visualization → interpretation**
 
-**📊 Metrics / Takeaways**
+It is particularly useful for explaining how unstructured text fields can be converted into analytical features and incorporated into a broader EDA workflow.
 
-📈 Dataset Size: 8,807 entries
+## Repository Files
 
-🎬 Content Types: Movies & TV Shows
+- `Netflix_Data_Analysis.ipynb` — analysis notebook
+- `netflix_titles.csv` — dataset
+- `Netflix_Data_Analysis.ipynb - Colab.pdf` — notebook export
+- PNG files — analysis outputs
 
-⭐ Most Common Rating: TV-MA
+## Tech Stack
 
-⏳ Trend: Rapid growth post-2015
-
-😊 Sentiment: Mostly Positive
+**Python | Pandas | Matplotlib | Seaborn | TextBlob | Jupyter/Colab**
