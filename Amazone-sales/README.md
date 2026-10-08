@@ -1,89 +1,85 @@
-# 🛒 Amazon Sales Data Analysis
+# Amazon Sales Data Analysis — Python
 
-## 📌 Problem Statement
-E-commerce platforms like Amazon generate massive amounts of transactional data every day.  
-To make informed business decisions, it is important to analyze this sales data and uncover patterns such as:
-- Which product categories are performing well?
-- What are the most preferred product sizes?
-- How much do B2B orders contribute compared to retail orders?
+## Business Objective
+
+This project analyzes Amazon e-commerce sales data to identify product, customer, fulfillment, and geographic patterns that can support inventory, marketing, and fulfillment decisions.
+
+## Dataset
+
+- **Source file:** `Amazon Sale Report.csv`
+- **Raw rows:** 128,976
+- **Rows after the documented null-removal step:** 37,514
+- **Raw columns:** 21
+- **Columns retained after documented cleaning:** 19
+- **Period:** April 2022 – June 2022
+
+## Data Preparation
+
+The notebook performs the following documented preparation steps:
+
+1. Removes irrelevant/blank columns.
+2. Handles rows containing null values.
+3. Converts `ship-postal-code` to integer type.
+4. Converts `Date` to datetime.
+5. Renames `Qty` to `Quantity`.
+
+The cleaned dataset is then used for exploratory analysis.
+
+## Business Questions
+
+- Which product categories have the highest order volume?
+- Which sizes are most frequently purchased?
+- What fulfillment method dominates the dataset?
+- What is the mix of B2B versus retail orders?
 - Which states contribute the highest sales volume?
 
-The goal of this project is to **clean, analyze, and visualize Amazon sales data** to derive insights that can guide inventory, marketing, and fulfillment strategies.
+## Key Findings
 
----
+The analysis identifies:
 
-## 🎯 Project Objectives
-- Perform **data cleaning & preprocessing** for accurate analysis.  
-- Conduct **exploratory data analysis (EDA)** to identify trends in sales.  
-- Visualize results for easier interpretation.  
-- Highlight key **metrics** useful for decision-making.  
+- **T-shirts** as the leading product category.
+- **M** as the most common product size.
+- **Easy Ship** as the dominant fulfillment method in the dataset.
+- A heavily **retail-oriented** customer mix, with the documented analysis reporting approximately 99.3% retail and 0.7% B2B.
+- **Maharashtra** as the state with the highest sales volume in the analyzed dataset.
 
----
+## Visual Analysis
 
-## 📂 Dataset
-- **File:** `Amazon Sale Report.csv`  
-- **Rows:** 128,976 → cleaned to 37,514 after removing nulls  
-- **Columns:** 21 → cleaned to 19 after dropping irrelevant ones  
-- **Time Period:** April 2022 – June 2022  
+### Product Size
 
----
-
-## 🧹 Data Cleaning Steps
-1. Dropped irrelevant/blank columns: `New`, `PendingS`  
-2. Removed rows with **null values** → final dataset size = `37,514 rows × 19 columns`  
-3. Converted `ship-postal-code` → integer type  
-4. Converted `Date` → datetime format  
-5. Renamed columns (`Qty` → `Quantity`)  
-
----
-
-## 🔍 Exploratory Data Analysis (EDA)
-
-### 📏 Key Metrics & Findings
-1. **Top Product Category** → T-shirts (most purchased category).  
-2. **Preferred Product Size** → "M" size dominates, followed by "L" and "XL".  
-3. **Order Fulfillment** → Amazon (Easy Ship) handles majority of deliveries.  
-4. **Customer Segment** → 99.3% orders from Retail buyers, only 0.7% from B2B.  
-5. **Top State by Sales** → Maharashtra contributes the highest sales volume.  
-
----
-
-## 📊 Visual Insights
-
-### 1️⃣ Product Size Preference
 ![Size Distribution](Size.png)
 
-### 2️⃣ Product Category
+### Product Category
+
 ![Category Distribution](Category.png)
 
-### 3️⃣ Courier & Fulfillment
-![Courier Status](Ship_mode.png)
+### Fulfillment
 
-### 4️⃣ B2B vs Retail
-![B2B Pie](A.png)
+![Fulfillment Analysis](Ship_mode.png)
 
-### 5️⃣ Geographic Distribution
-![Top States](State.png)
+### B2B vs Retail
 
----
+![Customer Mix](A.png)
 
-## ✅ Conclusion
-- **T-shirts (M-size)** are the most purchased products.  
-- Sales are heavily concentrated in **Maharashtra**.  
-- **Amazon’s Easy Ship service** is the dominant fulfillment method.  
-- Very few customers are **B2B buyers**, indicating retail dominates this dataset.  
+### Geographic Analysis
 
-**Future Work:**
-- Perform **time series analysis** to forecast demand.  
-- Build a **predictive ML model** for sales forecasting.  
-- Create an interactive **dashboard** in Power BI or Tableau.  
+![State Analysis](State.png)
 
----
+## Interview Talking Points
 
-## 🚀 Tech Stack
-- Python (Pandas, NumPy, Matplotlib, Seaborn)  
-- Jupyter/Colab Notebook  
+This project demonstrates a practical Python analytics workflow:
 
----
+**Raw CSV → data cleaning → datatype handling → exploratory analysis → visualization → business interpretation**
 
-## 📂 Repository Structure
+The main analytical focus is not only plotting charts, but converting transaction-level data into actionable observations about products, customers, fulfillment, and geography.
+
+## Repository Files
+
+- `Amazon Sale Report.ipynb` — analysis notebook
+- `Amazon Sale Report.csv` — source dataset
+- `Amazon Sale Report.ipynb - Colab.pdf` — notebook export
+- PNG files — analytical visualizations
+
+## Tech Stack
+
+**Python | Pandas | NumPy | Matplotlib | Seaborn | Jupyter/Colab**
