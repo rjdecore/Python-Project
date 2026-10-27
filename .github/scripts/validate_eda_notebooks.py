@@ -1,9 +1,12 @@
-"""Validate the tracked EDA notebooks' JSON and Python cell syntax.
+"""Validate and execute the tracked EDA notebooks against their committed CSVs.
 
-This is a static check; it does not execute analysis cells or verify numeric findings.
+This checks notebook JSON and runs every cell in a fresh kernel. It does not assert
+that a descriptive finding is causal; numeric findings still need business review.
 """
-import json
 from pathlib import Path
+
+import nbformat
+from nbclient import NotebookClient
 
 NOTEBOOKS = [
     Path("Amazone-sales/Amazon Sale Report.ipynb"),
@@ -11,39 +14,21 @@ NOTEBOOKS = [
 ]
 
 
-def clean_cell(source):
-    lines = []
-    for line in source.splitlines():
-        stripped = line.lstrip()
-        if stripped.startswith(("%", "!")):
-            continue
-        if "get_ipython().run_line_magic" in stripped or "get_ipython().system" in stripped:
-            continue
-        lines.append(line)
-    return "\n".join(lines)
-
-
 def main():
     for path in NOTEBOOKS:
-        notebook = json.loads(path.read_text(encoding="utf-8"))
-        code_count = 0
-        for index, cell in enumerate(notebook.get("cells", [])):
-            if cell.get("cell_type") != "code":
-                continue
-            source = "".join(cell.get("source", []))
-            source = clean_cell(source)
-            if not source.strip():
-                continue
-            try:
-                compile(source, f"{path}:cell-{index}", "exec")
-            except SyntaxError as exc:
-                raise SyntaxError(
-                    f"{path}, cell {index}: {exc.msg} at line {exc.lineno}"
-                ) from exc
-            code_count += 1
-        print(f"Validated {path}: {code_count} Python code cells")
-    print("Notebook JSON and targeted EDA cell syntax checks passed.")
-    
+        notebook = nbformat.read(path, as_version=4)
+        client = NotebookClient(
+            notebook,
+            timeout=300,
+            kernel_name="python3",
+            resources={"metadata": {"path": str(path.parent.resolve())}},
+            allow_errors=False,
+        )
+        client.execute()
+        code_cells = sum(cell.cell_type == "code" for cell in notebook.cells)
+        print(f"Executed {path}: {code_cells} code cells passed")
+    print("EDA notebook execution checks passed.")
+
 
 if __name__ == "__main__":
     main()
