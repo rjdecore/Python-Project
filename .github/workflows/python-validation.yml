@@ -1,4 +1,4 @@
-name: Python source validation
+name: Python source and notebook validation
 
 on:
   pull_request:
@@ -15,3 +15,5 @@ jobs:
           python-version: "3.11"
       - name: Compile tracked Python files
         run: python -m compileall -q .
+      - name: Validate EDA notebook JSON and code cells
+        run: python .github/scripts/validate_eda_notebooks.py
