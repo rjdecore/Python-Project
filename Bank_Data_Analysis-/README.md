@@ -23,3 +23,9 @@ Analyze bank-marketing customer data to understand demographics, balances, campa
 
 ## Tech Stack
 **Python | Pandas | NumPy | Matplotlib | Seaborn | Customer Analytics**
+
+## Key Findings & Business Value
+Use the age, balance, month, call-duration and education/marital-status breakdowns to describe which customer groups and campaign conditions differ in the supplied data. Add exact numerical findings only from the notebook outputs. These patterns can help campaign teams form targeting hypotheses, but do not prove that a customer will subscribe.
+
+## Report / PDF
+No project-specific PDF export was identified in the folder listing; use the notebook and source CSV as the reproducible artifacts.
