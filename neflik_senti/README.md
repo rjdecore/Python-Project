@@ -23,3 +23,11 @@ TextBlob polarity is used to classify descriptions as **Positive, Neutral, or Ne
 
 ## Tech Stack
 **Python | Pandas | NumPy | Plotly Express | TextBlob | EDA | NLP**
+
+## Key Findings & Business Value
+The analysis describes catalog ratings, contributor frequency, content-type trends and sentiment polarity in title descriptions. Sentiment from plot descriptions is not the same as audience sentiment or viewer satisfaction; use it only as a text-feature demonstration.
+
+Content teams can use the catalog summaries to frame portfolio questions and investigate how descriptions vary across categories and years.
+
+## Report / PDF
+[Open the notebook PDF export](Netflix_Data_Analysis.ipynb%20-%20Colab.pdf) with the notebook and source data.
