@@ -95,3 +95,7 @@ The main analytical focus is not only plotting charts, but converting transactio
 ## Tech Stack
 
 **Python | Pandas | NumPy | Matplotlib | Seaborn | Jupyter/Colab**
+
+
+## Business Value
+The results can support exploratory product assortment, fulfillment and geographic sales reviews. The large reduction from 128,976 to 37,514 rows should be explained before relying on any segment percentages; report counts after each cleaning rule and distinguish orders, order lines and units.
