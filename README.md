@@ -9,6 +9,7 @@ A collection of Python projects focused on data preparation, exploratory analysi
 | Project | Business question | Main workflow |
 |---|---|---|
 | [Amazon Sales Analysis](Amazone-sales/) | How do product categories, sizes, fulfillment and geography vary in the order data? | Data cleaning, datetime preparation, grouped analysis, visualization |
+| [Diwali Sales Analysis](project-1/Diwali_Sales_Analysis/) | How do customer segments, geography and product categories vary in the festive-season data? | Missing-value review, segment analysis, aggregation, visualization |
 | [Uber Ride Analysis](Uber-Data/) | How do ride purposes, time of day, weekday and trip distance vary? | Timestamp parsing, feature creation, missing-value handling, EDA |
 | [Google Search Trends](Google_Search_Trend_Analysis/) | How does search interest change over time and across keywords? | Time-series preparation, comparison and visualization |
 | [Netflix Content Analysis](Netflix-Data-Analysis/) | What patterns appear in content type, contributors, production years and descriptions? | Categorical analysis, trends, text sentiment |
