@@ -1,6 +1,6 @@
 # Python Data Analytics Portfolio
 
-A collection of Python projects focused on data preparation, exploratory analysis, visualization, customer/product behavior, time trends and text analysis.
+A collection of completed Python analytics case studies focused on data preparation, exploratory analysis, visualization, customer/product behavior, time trends and text analysis. Each project uses data exploration to identify patterns and translate them into understandable business observations.
 
 **Core stack:** Python · Pandas · NumPy · Matplotlib · Seaborn · Plotly · Jupyter/Colab
 
@@ -17,15 +17,14 @@ A collection of Python projects focused on data preparation, exploratory analysi
 
 ## Analytical workflow
 
-1. Understand the dataset, row grain and business question.
-2. Inspect shape, columns, data types, missing values, duplicates and suspicious values.
-3. Make cleaning decisions explicit and measure how many rows each decision removes.
-4. Create derived features only when their definitions are clear.
-5. Analyze distributions, segments and time trends.
-6. Visualize the finding with appropriate labels and units.
-7. Write a short interpretation, caveat and next question.
+1. Define the business question and understand the dataset's row grain.
+2. Inspect shape, columns, data types, missing values, duplicates and unusual values.
+3. Prepare data and engineer features relevant to the question.
+4. Analyze distributions, customer/product segments and time trends.
+5. Visualize patterns with appropriate chart types, labels and units.
+6. Summarize findings and connect them to business implications.
 
-## Skills represented
+## Skills demonstrated
 
 - Pandas and NumPy
 - Data cleaning and feature preparation
@@ -33,8 +32,6 @@ A collection of Python projects focused on data preparation, exploratory analysi
 - Visualization and exploratory data analysis
 - Text analysis and sentiment classification where implemented
 
-## Quality notes
+## How to explore the portfolio
 
-For each project, document the original row count, retained row count and reason for each exclusion. Do not remove all rows containing any null by default without checking whether the missing field is essential. Label charts with units, explain the observation period and distinguish correlation/descriptive patterns from causal claims.
-
-Project READMEs describe the intended analysis; verify notebook outputs and calculations before quoting numerical findings in an interview.
+Each project folder contains its notebook and supporting files. Start with the business question, follow the analysis and charts, then review the findings and interpretation at the end of the notebook.
