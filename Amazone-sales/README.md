@@ -1,101 +1,45 @@
 # Amazon Sales Data Analysis — Python
 
-## Business Objective
+## Objective
+Explore Amazon order records from April–June 2022 to understand product mix, size demand, fulfillment status, B2B mix and shipping geography.
 
-This project analyzes Amazon e-commerce sales data to identify product, customer, fulfillment, and geographic patterns that can support inventory, marketing, and fulfillment decisions.
+## Dataset and grain
+- Source: [Amazon Sale Report.csv](Amazon%20Sale%20Report.csv)
+- Raw data: 128,976 rows and 21 columns before removing the two blank/irrelevant columns used in the notebook.
+- Grain caution: a row is not automatically a unique customer or a successfully delivered order. Check Order ID uniqueness and order status before translating record counts into customer or delivery claims.
 
-## Dataset
+## Questions explored
+- Which sizes and categories occur most often, and how does quantity differ from record count?
+- How are records distributed by courier status and order status?
+- What is the B2B versus retail mix?
+- Which shipping states have the most records?
+- How does Amount vary across frequently occurring categories?
 
-- **Source file:** `Amazon Sale Report.csv`
-- **Raw rows:** 128,976
-- **Rows after the documented null-removal step:** 37,514
-- **Raw columns:** 21
-- **Columns retained after documented cleaning:** 19
-- **Period:** April 2022 – June 2022
+## Data preparation
+The notebook removes the blank/irrelevant New and PendingS columns, converts Amount and quantity fields to numeric, preserves missing optional fields, converts the postal-code field to a nullable integer, parses dates using the source format, and renames Qty to Quantity. Postal codes are identifiers rather than measurements, so they should not be averaged or treated as a numeric business metric.
 
-## Data Preparation
+The notebook deliberately avoids dropping every row with any missing value. Instead, it surfaces missingness and uses question-specific filters where needed.
 
-The notebook documents the following preparation steps:
+## Visual analysis
+- Size frequency and total quantity
+- Amount distribution
+- Top categories by record count
+- Courier status versus order status
+- B2B/retail and fulfillment mix
+- Shipping-state record counts
+- Order-amount distribution across the five most frequent categories
 
-1. Removes irrelevant/blank columns.
-2. Handles rows containing null values.
-3. Converts `ship-postal-code` to integer type.
-4. Converts `Date` to datetime.
-5. Renames `Qty` to `Quantity`.
+## Interpretation and limitations
+The notebook is an exploratory analysis. Rankings and percentages should be reproduced by running the current notebook against the included CSV. Counts are described as records/order lines unless explicitly deduplicated by Order ID. A high number of records does not automatically mean a high number of unique customers, and status mix should be checked before describing demand as completed sales.
 
-### Data-quality caveat
+## Files
+- [Analysis notebook](Amazon%20Sale%20Report.ipynb)
+- [Source CSV](Amazon%20Sale%20Report.csv)
+- [Notebook PDF export](Amazon%20Sale%20Report.ipynb%20-%20Colab.pdf)
+- PNG files contain earlier chart exports; rerun the notebook before treating them as the current results.
 
-The documented cleaning step reduces the dataset from **128,976 raw rows to 37,514 rows**. That is a large reduction, so it must be explained before presenting the analysis as production-ready. Check which columns contain nulls, whether those fields are essential for each question, and how many rows each cleaning rule removes. Avoid dropping every row with any null by default if it removes otherwise useful orders. Document the exact exclusion rule and report the retained-row count after each step.
+## Business value
+This analysis can help frame questions about assortment, size availability, fulfillment mix and geographic demand. Any stock or campaign decision should be based on validated order-level metrics and current data, not chart appearance alone.
 
-The cleaned dataset is then used for exploratory analysis.
-
-## Business Questions
-
-- Which product categories have the highest order volume?
-- Which sizes are most frequently purchased?
-- What fulfillment method dominates the dataset?
-- What is the mix of B2B versus retail orders?
-- Which states contribute the highest sales volume?
-
-## Key Findings
-
-The analysis identifies:
-
-- **T-shirts** as the leading product category.
-- **M** as the most common product size.
-- **Easy Ship** as the dominant fulfillment method in the dataset.
-- A heavily **retail-oriented** customer mix, with the documented analysis reporting approximately 99.3% retail and 0.7% B2B.
-- **Maharashtra** as the state with the highest sales volume in the analyzed dataset.
-
-## Visual Analysis
-
-### Product Size
-
-![Size Distribution](Size.png)
-
-### Product Category
-
-![Category Distribution](Category.png)
-
-### Fulfillment
-
-![Fulfillment Analysis](Ship_mode.png)
-
-### B2B vs Retail
-
-![Customer Mix](A.png)
-
-### Geographic Analysis
-
-![State Analysis](State.png)
-
-## Validation checklist before presenting results
-
-- Reproduce the raw and cleaned row counts from the notebook.
-- Quantify rows removed by each rule and justify the postal-code type conversion (postal codes are identifiers, not quantities).
-- Recalculate the reported retail/B2B mix and state/category rankings from the cleaned data.
-- Confirm whether each chart counts orders, order lines, units or sales value; use consistent terminology.
-- Check that date filtering matches the documented April–June 2022 period.
-
-## Interview Talking Points
-
-This project demonstrates a practical Python analytics workflow:
-
-**Raw CSV → data cleaning → datatype handling → exploratory analysis → visualization → business interpretation**
-
-The main analytical focus is not only plotting charts, but converting transaction-level data into actionable observations about products, customers, fulfillment, and geography.
-
-## Repository Files
-
-- `Amazon Sale Report.ipynb` — analysis notebook
-- `Amazon Sale Report.csv` — source dataset
-- `Amazon Sale Report.ipynb - Colab.pdf` — notebook export
-- PNG files — analytical visualizations
-
-## Tech Stack
-
-**Python | Pandas | NumPy | Matplotlib | Seaborn | Jupyter/Colab**
-
-
-## Business Value
-The results can support exploratory product assortment, fulfillment and geographic sales reviews. The large reduction from 128,976 to 37,514 rows should be explained before relying on any segment percentages; report counts after each cleaning rule and distinguish orders, order lines and units.
+## Stack
+Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook.
