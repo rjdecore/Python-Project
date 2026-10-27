@@ -15,13 +15,17 @@ This project analyzes Amazon e-commerce sales data to identify product, customer
 
 ## Data Preparation
 
-The notebook performs the following documented preparation steps:
+The notebook documents the following preparation steps:
 
 1. Removes irrelevant/blank columns.
 2. Handles rows containing null values.
 3. Converts `ship-postal-code` to integer type.
 4. Converts `Date` to datetime.
 5. Renames `Qty` to `Quantity`.
+
+### Data-quality caveat
+
+The documented cleaning step reduces the dataset from **128,976 raw rows to 37,514 rows**. That is a large reduction, so it must be explained before presenting the analysis as production-ready. Check which columns contain nulls, whether those fields are essential for each question, and how many rows each cleaning rule removes. Avoid dropping every row with any null by default if it removes otherwise useful orders. Document the exact exclusion rule and report the retained-row count after each step.
 
 The cleaned dataset is then used for exploratory analysis.
 
@@ -64,6 +68,14 @@ The analysis identifies:
 ### Geographic Analysis
 
 ![State Analysis](State.png)
+
+## Validation checklist before presenting results
+
+- Reproduce the raw and cleaned row counts from the notebook.
+- Quantify rows removed by each rule and justify the postal-code type conversion (postal codes are identifiers, not quantities).
+- Recalculate the reported retail/B2B mix and state/category rankings from the cleaned data.
+- Confirm whether each chart counts orders, order lines, units or sales value; use consistent terminology.
+- Check that date filtering matches the documented April–June 2022 period.
 
 ## Interview Talking Points
 
