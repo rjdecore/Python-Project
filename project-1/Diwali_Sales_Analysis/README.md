@@ -1,24 +1,30 @@
 # Diwali Sales & Customer Analysis — Python
 
-## Business Objective
-Analyze festive-season e-commerce transactions to understand customer demographics, geography, occupation, product categories, and purchasing behavior.
+## Objective
+Explore the festive-season sales dataset by customer demographics, state, occupation, marital-status category and product category.
 
-## Business Questions
-- Which age groups and genders contribute most sales?
-- Which states generate the most orders/sales?
-- Which occupations show higher purchasing activity?
-- Which categories and products are most popular?
-- How does marital status relate to purchasing behavior?
+## Business questions
+- Which gender and age groups account for the largest recorded order volume and Amount?
+- Which states rank highest by order count versus Amount?
+- How does recorded sales mix vary by occupation and marital-status category?
+- Which product categories lead by record frequency and total Amount?
+- Which products appear most often by summed Orders?
 
-## Reported Findings
-- Female customers contribute higher sales in the analyzed data.
-- The **26–35** age group is the strongest segment.
-- Uttar Pradesh, Maharashtra, and Karnataka are leading states.
-- Married women show strong purchasing activity.
-- Food, Clothing, and Electronics are leading categories.
+## Data preparation
+The notebook removes irrelevant columns, checks missingness, validates Amount and Orders as numeric fields, and retains rows where those two measures are available. Missing demographic and category values are labeled Unknown so they are not silently discarded from every analysis. It prints the row counts before and after the numeric-measure filter.
 
-## Data Preparation
-Removed irrelevant columns, handled missing values, converted Amount to integer, and standardized column names.
+## Analysis
+The notebook compares counts and Amount separately for gender, age group, state, marital-status category, occupation and product category, then ranks products by summed Orders.
 
-## Tech Stack
-**Python | Pandas | NumPy | Matplotlib | Seaborn | Customer Segmentation | EDA**
+## Interpretation and limitations
+Count and Amount answer different questions: a group can have more records without generating the highest total Amount. The results describe this dataset and do not establish that gender, age, occupation or marital status causes spending behavior. Rerun the notebook to verify retained-row counts and rankings against the included CSV.
+
+## Files
+- [Analysis notebook](Diwali_Sales_Analysis%20(1).ipynb)
+- [Source dataset](Diwali%20Sales%20Data.csv)
+
+## Business value
+The analysis can help form hypotheses for festive assortment and campaign planning. Before making decisions, validate the data period, define whether Orders means transaction count or item quantity, and compare segment size with per-order/per-customer measures.
+
+## Stack
+Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook.
