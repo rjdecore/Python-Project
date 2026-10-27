@@ -17,3 +17,9 @@ Search trends can support marketing timing, content planning, demand sensing, an
 
 ## Tech Stack
 **Python | Pandas | NumPy | Matplotlib | Seaborn | Google Trends**
+
+## Key Findings & Business Value
+The time-series and keyword comparison visuals are intended to reveal changing search interest, seasonal spikes and relative keyword patterns. Use the notebook outputs for exact dates and values; search interest is a relative index, not necessarily absolute search volume or sales demand. Marketing and content teams can use these patterns to plan topics and campaign timing for further testing.
+
+## Report / PDF
+Review the project PDF export if present in this folder; otherwise use the notebook and source trend data as the reproducible artifacts.
