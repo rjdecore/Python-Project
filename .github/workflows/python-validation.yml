@@ -1,0 +1,17 @@
+name: Python source validation
+
+on:
+  pull_request:
+  push:
+    branches: [main, hiring-ready-python-readme]
+
+jobs:
+  compile-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile tracked Python files
+        run: python -m compileall -q .
