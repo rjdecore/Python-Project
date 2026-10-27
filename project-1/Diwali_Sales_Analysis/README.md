@@ -22,3 +22,9 @@ Removed irrelevant columns, handled missing values, converted Amount to integer,
 
 ## Tech Stack
 **Python | Pandas | NumPy | Matplotlib | Seaborn | Customer Segmentation | EDA**
+
+## Business Value
+The demographic, geographic and category breakdowns can help a retail team form hypotheses about festive assortment and campaign targeting. Treat these as patterns in the analyzed dataset, not causal proof that a demographic attribute drives purchasing.
+
+## Report / PDF
+No separate PDF export was identified in the project listing; use the notebook and dataset to reproduce the findings.
