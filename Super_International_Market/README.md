@@ -24,11 +24,3 @@ The existing analysis documents handling of negative profit values during prepar
 
 ## Tech Stack
 **Python | Pandas | NumPy | Matplotlib | Seaborn | Sales Analytics**
-
-## Key Findings & Business Value
-The analysis compares sales and profit over time, region/market contribution, profitable locations, product quantities and market-level distributions. Use notebook outputs for exact best/worst markets and products. Document the treatment of negative-profit values because it changes the interpretation of profitability.
-
-Business teams can use the results to identify markets and products for deeper profitability review and to distinguish revenue growth from profit performance.
-
-## Report / PDF
-[Open the exported notebook PDF](Solution%20-%20Super%20International%20Market.ipynb%20-%20Colab.pdf) with the notebook and source data.

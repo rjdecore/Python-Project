@@ -27,9 +27,3 @@ The notebook answers 15 analytical questions covering:
 
 ## Tech Stack
 **Python | Pandas | NumPy | Matplotlib | Seaborn | EDA**
-
-## Business Value
-The analysis demonstrates how to profile hourly weather observations and summarize visibility, wind, humidity, pressure and conditions. It is useful for exploratory reporting and data-quality practice, not a weather-forecasting model.
-
-## Report / PDF
-[Open the weather analysis PDF](Project%201%20-%20Weather%20Data%20Analysis.ipynb%20-%20Colab.pdf), with the notebook and source dataset for reproducibility.

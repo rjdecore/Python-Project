@@ -81,7 +81,3 @@ It is particularly useful for explaining how unstructured text fields can be con
 ## Tech Stack
 
 **Python | Pandas | Matplotlib | Seaborn | TextBlob | Jupyter/Colab**
-
-
-## Business Value
-Catalog teams can use the observed content mix and release-year trends to frame portfolio questions; sentiment labels from descriptions are a lightweight text-analysis feature, not audience sentiment or a measure of viewer satisfaction.

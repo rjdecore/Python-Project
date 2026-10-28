@@ -22,9 +22,3 @@ Analyze ride behavior to understand ride categories, purposes, demand timing, se
 
 ## Tech Stack
 **Python | Pandas | NumPy | Matplotlib | Seaborn | EDA | Time Analysis**
-
-## Business Value
-The findings can help describe when and why rides occur, which purposes dominate and how far users travel. These patterns can inform exploratory travel-demand and resource-planning discussions; the dataset is limited to 1,156 records and should not be treated as a universal demand model.
-
-## Report / PDF
-[Open the Uber analysis notes PDF](Notes_Uber_Data_analysis_project.pdf) alongside the notebook and dataset.

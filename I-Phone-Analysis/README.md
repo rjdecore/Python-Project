@@ -18,9 +18,3 @@ Analyze iPhone listings to understand pricing, discounts, ratings, review volume
 
 ## Tech Stack
 **Python | Pandas | Plotly | EDA | Retail/Product Analytics**
-
-## Business Value
-The analysis can help compare listed iPhone models on price, discount, rating and review engagement. Because the dataset contains 62 rows, treat the patterns as exploratory and do not generalize them to the full market.
-
-## Report / PDF
-[Open the notebook PDF export](iPhone%20Sales%20Analysis.ipynb%20-%20Colab.pdf) and the source notebook/data files.
